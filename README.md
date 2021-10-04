@@ -2,8 +2,6 @@
 
 > 适配Android R
 >
-> 修复制作超过2G的SGSI无法上传Release的问题
->
 > 支持自定义精简功能
 >
 > 当前版本: [v11](https://github.com/xiaoxindada/SGSI-build-tool/tree/11)
@@ -25,7 +23,7 @@
    |待制作包链接       |ROM_URL    |https://hugeota.d.miui.com/21.5.31/miui_TUCANA_21.5.31_cb42ec9bed_11.0.zip|
    |待制作包名称       |ZIP_NAME   |miui_TUCANA_21.5.31_cb42ec9bed_11.0.zip                                   |
    |待制作包种类       |OS_TYPE    |miui                                                                      |
-   |打包名称           |REPACK_NAME|SGSI.zip                                                                  |
+   |打包名称           |REPACK_NAME|MIUI＿SGSI.zip                                                                  |
 
 3. 开始制作
    
@@ -36,10 +34,15 @@
 1. 自定义精简功能
    
    修改apps_clean文件夹下对应系统的精简脚本，请自行参照修改
+2.关于Prepare-app
+
+每次跑sgsi时回自动生成Prepare-app.zip
+prepare-app.zip里包含用vendor修bug的文件夹，因为是自动化所以需要大家解压自己筛选，用于补驱动
+所以文件不加筛选对自己的vendor乱补几乎不会成功。
 
 ## 后续步骤
 
-由于[Github large binaries](https://docs.github.com/en/github/managing-large-files/working-with-large-files/distributing-large-binaries)限制，制作后的SGSI若超过**2GB**则**无法上传**，因此本Action将自动根据制作后的SGSI大小选择**直接上传**/**分卷上传**
+由于wetransfer限制，制作后的SGSI若超过**2GB**则**无法上传**，因此本Action将自动根据制作后的SGSI大小选择**直接上传**/**分卷上传**
 
 若以分卷方式上传，请下载每个分卷后手动合卷解压
 
@@ -50,6 +53,5 @@ tar xzvf ${fileName}.tar.gz            # 解压
 
 ## 版权与致谢
 
-本项目受 [SGSI-build-action](https://github.com/xiaoxindada/SGSI-build-action) 项目启发。
-
+本项目受https://github.com/xiaoxindada/SGSI-build-action和https://github.com/XayahSuSuSu/Action-SGSI-build项目启发。
 感谢[xiaoxindada](https://github.com/xiaoxindada)的开源。
