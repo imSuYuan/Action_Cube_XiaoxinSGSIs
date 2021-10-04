@@ -45,7 +45,7 @@
 ## 后续步骤
 
 由于wetransfer限制，制作后的SGSI若超过**2GB**则**无法上传**，因此本Action将自动根据制作后的SGSI大小选择**直接上传**/**分卷上传**
-
+跑好后的包在Upload SGSI to WeTransfer里展开，看 Download Link 链接，访问即可下载。
 若以分卷方式上传，请下载每个分卷后手动合卷解压
 
 ```
