@@ -1,6 +1,6 @@
-# Action-SGSI-build
+# Action_Cube_XiaoxinSGSIs
 
-> 适配Android R
+> 仅支持Android R
 >
 > 支持自定义精简功能
 >
@@ -37,10 +37,10 @@
 
 2.关于Prepare-app
 
-每次跑sgsi时回自动生成Prepare-app.zip
-prepare-app.zip里包含用vendor修bug的文件夹，因为是自动化所
-以需要大家解压自己筛选，用于补驱动,所以文件不加筛选对自己的
-vendor乱补几乎不会成功。
+   每次跑sgsi时回自动生成Prepare-app.zip
+   prepare-app.zip里包含用vendor修bug的文件夹，因为是自动化所
+   以需要大家解压自己筛选，用于补驱动,所以文件不加筛选对自己的
+   vendor乱补几乎不会成功。
 
 ## 后续步骤
 
