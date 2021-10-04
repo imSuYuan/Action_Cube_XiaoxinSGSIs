@@ -49,9 +49,9 @@
 若以分卷方式上传，请下载每个分卷后手动合卷解压
 
 ```
-cat ${fileName}*>${fileName}.tar.gz    # 将分卷文件fileName*合并
-tar xzvf ${fileName}.tar.gz            # 解压
-```
+下载完用cat命令合并，例如
+cat MIUI_GSI.zip00 MIUI_GSI.zip01 MIUI_GSI.zip02 >MIUI_GSI.tar.gz
+tar xzvf MIUI_GSI.tar.gz
 
 ## 版权与致谢
 
