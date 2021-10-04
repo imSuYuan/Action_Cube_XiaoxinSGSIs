@@ -55,5 +55,5 @@ tar xzvf ${fileName}.tar.gz            # 解压
 
 ## 版权与致谢
 
-本项目受https://github.com/xiaoxindada/SGSI-build-action和https://github.com/XayahSuSuSu/Action-SGSI-build项目启发。
+本项目受https://github.com/xiaoxindada/SGSI-build-action和https://github.com/XayahSuSuSu/Action-SGSI-build    项目启发。
 感谢[xiaoxindada](https://github.com/xiaoxindada)的开源。
