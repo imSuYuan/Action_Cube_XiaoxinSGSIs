@@ -85,13 +85,13 @@ jobs:
           zip -r Prepare_patch.zip Tool-SGSI-build/out/vendor/app/* Tool-SGSI-build/out/vendor/bin/* Tool-SGSI-build/out/vendor/etc/* Tool-SGSI-build/out/vendor/lib/* Tool-SGSI-build/out/vendor/lib64/* Tool-SGSI-build/out/vendor/overlay/*
           sudo mv Prepare_patch.zip Tool-SGSI-build/SGSI/
          
-      - name: Packing(AB)...
+      - name: Packing...
         if: ${{ github.event.inputs.SGSI_TYPE }} == 'AB' || ${{ github.event.inputs.SGSI_TYPE }} == 'BOTH'
         run: |
           cd $GITHUB_WORKSPACE/Tool-SGSI-build
           pwd
-          zip -r AB_${{ github.event.inputs.REPACK_NAME }} SGSI/*
-          ls "AB_${{ github.event.inputs.REPACK_NAME }}"
+          zip -r ${{ github.event.inputs.REPACK_NAME }} SGSI/*
+          ls "${{ github.event.inputs.REPACK_NAME }}"
           echo "--------------------------------------"
           ls
           echo "--------------------------------------"
@@ -99,7 +99,7 @@ jobs:
           echo "--------------------------------------"
           ls upload
           echo "--------------------------------------"
-          if [ $(ls -l AB_${{ github.event.inputs.REPACK_NAME }} | awk '{print $5}') -gt 2147483647 ]; then tar cvzpf - ${{ github.event.inputs.REPACK_NAME }} | split -d -b 1024m - upload/${{ github.event.inputs.REPACK_NAME }}; else mv ${{ github.event.inputs.REPACK_NAME }} upload/${{ github.event.inputs.REPACK_NAME }}; fi
+          if [ $(ls -l ${{ github.event.inputs.REPACK_NAME }} | awk '{print $5}') -gt 2147483647 ]; then tar cvzpf - ${{ github.event.inputs.REPACK_NAME }} | split -d -b 1024m - upload/${{ github.event.inputs.REPACK_NAME }}; else mv ${{ github.event.inputs.REPACK_NAME }} upload/${{ github.event.inputs.REPACK_NAME }}; fi
           echo "--------------------------------------"
           ls upload
           echo "--------------------------------------"
