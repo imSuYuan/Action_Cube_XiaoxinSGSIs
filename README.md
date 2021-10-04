@@ -50,8 +50,8 @@
 
 ```
 下载完用cat命令合并，例如
-cat MIUI_GSI.zip00 MIUI_GSI.zip01 MIUI_GSI.zip02 >MIUI_GSI.tar.gz
-tar xzvf MIUI_GSI.tar.gz
+cat MIUI_GSI.zip00 MIUI_GSI.zip01 MIUI_GSI.zip02 >MIUI_GSI.tar.gz  #合并
+tar xzvf MIUI_GSI.tar.gz                                           #解压
 
 ## 版权与致谢
 
