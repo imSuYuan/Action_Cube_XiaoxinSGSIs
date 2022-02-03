@@ -20,8 +20,8 @@
 
    |说明               |Name       |Value(按你自己的需求填写)                                                 |
    |:------:           |:------:   | :------------------------:                                               |
-   |待制作包链接       |ROM_URL    |https://hugeota.d.miui.com/21.9.28/miui_DAVINCI_21.9.28_48aa8cdf69_11.0.zip|
-   |待制作包名称       |ZIP_NAME   |miui_DAVINCI_21.9.28_48aa8cdf69_11.0.zip                                   |
+   |待制作包链接       |ROM_URL    |https://bigota.d.miui.com/V12.5.2.0.RFJCNXM/miui_DAVINCI_V12.5.2.0.RFJCNXM_8e20b56805_11.0.zip|
+   |待制作包名称       |ZIP_NAME   |miui_DAVINCI_V12.5.2.0.RFJCNXM_8e20b56805_11.0.zip                                   |
    |待制作包种类       |OS_TYPE    |miui                                                                      |
    |打包名称           |REPACK_NAME|MIUI＿SGSI.zip                                                                  |
 
